@@ -10,11 +10,11 @@ sqLite is used. The database model consists of two tables:
 
 
 Database model
-|bands           |   |albums               |   
-|----------------|   |---------------------|
-|id (primary key)|   |band_id (foreign key)|
-|name            |   |name                 |
-                     |record_company       |
+| bands            | albums                |   
+| ---------------- | --------------------- |
+| id (primary key) | band_id (foreign key) |
+| name             | name                  |
+|                  | record_company        | 
 
 
 ## Packages used
