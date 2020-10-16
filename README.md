@@ -8,7 +8,13 @@ sqLite is used. The database model consists of two tables:
 * bands
 * albums
 
-The database model is shown below:
+
+Database model
+|bands           |   |albums               |   
+|----------------|   |---------------------|
+|id (primary key)|   |band_id (foreign key)|
+|name            |   |name                 |
+                     |record_company       |
 
 
 ## Packages used
