@@ -1,23 +1,31 @@
-# Overview
+# Bands Api
 
-This is my first rest api written in python using flask
+## Usage
+
+### List all bands
+**Endpoint**
+`GET /api/v1/resources/bands`
+
+**Repsonse**
+- `200 OK` on success
+```json
+[
+  {
+    "id": 1,
+    "name": "iron maiden",
+    "active": true,
+    "albums": [
+      {
+        "name": "somewhere in time",
+        "record_company": "some guys records"
+      } 
+    ] 
+  }
+]
+```
+### Add a new band
+**Endpoint**
+`POST /api/v1/resources/bands`
 
 
-## Database
-sqLite is used. The database model consists of two tables:
-* bands
-* albums
-
-
-Database model
-| bands            | albums                |   
-| ---------------- | --------------------- |
-| id (primary key) | band_id (foreign key) |
-| name             | name                  |
-|                  | record_company        | 
-
-
-## Packages used
-* Flask, version: 1.1.2
-* Flask-RESTful, version: 0.3.8
 
