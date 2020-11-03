@@ -24,6 +24,26 @@
   }
 ]
 ```
+
+### Show one band by id
+**Endpoint**
+
+`GET /api/v1/resources/band/<id>`
+
+**Repsonse**
+- `200 OK` on success
+```json
+[
+    {
+        "active": 1,
+        "albums": [],
+        "id": 3,
+        "name": "Millencolin"
+    }
+]
+```
+- `404 NOT FOUND` Band with id: 39 couldn't be found. On fail
+
 ### Add a new band
 **Endpoint**
 
@@ -46,9 +66,9 @@
 ```
 **Response**
 
-- `201 Created` on success. Response body: Band with id: 3 successfully added to the SQLite database
+- `201 CREATED` on success. Response body: Band with id: 3 successfully added to the SQLite database
 
-- `400 Bad request` on fail
+- `400 BAD REQUEST` on fail
 
 
 
