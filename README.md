@@ -37,8 +37,8 @@
     {
         "active": 1,
         "albums": [],
-        "id": 3,
-        "name": "Millencolin"
+        "id": 1,
+        "name": "The dead south"
     }
 ]
 ```
