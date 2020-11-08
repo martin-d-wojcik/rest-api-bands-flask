@@ -1,4 +1,3 @@
-from deprecated import deprecated
 import row as row
 from flask import jsonify, request, Flask
 import sqlite3
@@ -31,7 +30,7 @@ def api_bands():
 
     if request.method == 'GET':
         cursor = conn.execute("SELECT * FROM bands")
-        cursor_albums = conn.execute("SELECT "
+        '''cursor_albums = conn.execute("SELECT "
                                      "l.name, l.record_company "
                                      "FROM albums l "
                                      "INNER JOIN bands b ON "
@@ -39,10 +38,10 @@ def api_bands():
         albums_db = [
             dict(name=row[0], record_company=row[1])
             for row in cursor_albums.fetchall()
-        ]
+        ]'''
 
         bands_db = [
-            dict(id=row[0], name=row[1], albums=albums_db, active=row[3])
+            dict(id=row[0], name=row[1], active=row[3])
             for row in cursor.fetchall()
         ]
 

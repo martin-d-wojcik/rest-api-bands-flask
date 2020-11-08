@@ -14,13 +14,7 @@
   {
     "id": 1,
     "name": "iron maiden",
-    "active": true,
-    "albums": [
-      {
-        "name": "somewhere in time",
-        "record_company": "some guys records"
-      } 
-    ] 
+    "active": true
   }
 ]
 ```
