@@ -70,5 +70,15 @@
 
 - `400 BAD REQUEST` on fail
 
+### Delete a band
+**Endpoint**
+
+`DELETE /api/v1/resources/bands/<id>`
+
+**Response**
+
+- `200 OK` on success. Response body: Band with id: 1 deleted
+
+
 
 
